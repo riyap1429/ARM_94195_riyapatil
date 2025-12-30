@@ -1,0 +1,47 @@
+11:13:43 **** Incremental Build of configuration Debug for project Q.1 ****
+make -j12 all 
+arm-none-eabi-gcc "../USB_HOST/Target/usbh_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_HOST/Target/usbh_conf.d" -MT"USB_HOST/Target/usbh_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_HOST/Target/usbh_conf.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../USB_HOST/Target/usbh_conf.c: In function 'HAL_HCD_MspInit':
+../USB_HOST/Target/usbh_conf.c:78:27: error: 'VBUS_FS_Pin' undeclared (first use in this function)
+   78 |     GPIO_InitStruct.Pin = VBUS_FS_Pin;
+      |                           ^~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c:78:27: note: each undeclared identifier is reported only once for each function it appears in
+../USB_HOST/Target/usbh_conf.c:81:19: error: 'VBUS_FS_GPIO_Port' undeclared (first use in this function)
+   81 |     HAL_GPIO_Init(VBUS_FS_GPIO_Port, &GPIO_InitStruct);
+      |                   ^~~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c:83:27: error: 'OTG_FS_ID_Pin' undeclared (first use in this function); did you mean 'OTG_FS_IRQn'?
+   83 |     GPIO_InitStruct.Pin = OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin;
+      |                           ^~~~~~~~~~~~~
+      |                           OTG_FS_IRQn
+../USB_HOST/Target/usbh_conf.c:83:41: error: 'OTG_FS_DM_Pin' undeclared (first use in this function); did you mean 'OTG_FS_IRQn'?
+   83 |     GPIO_InitStruct.Pin = OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin;
+      |                                         ^~~~~~~~~~~~~
+      |                                         OTG_FS_IRQn
+../USB_HOST/Target/usbh_conf.c:83:55: error: 'OTG_FS_DP_Pin' undeclared (first use in this function); did you mean 'OTG_FS_IRQn'?
+   83 |     GPIO_InitStruct.Pin = OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin;
+      |                                                       ^~~~~~~~~~~~~
+      |                                                       OTG_FS_IRQn
+../USB_HOST/Target/usbh_conf.c: In function 'HAL_HCD_MspDeInit':
+../USB_HOST/Target/usbh_conf.c:118:28: error: 'VBUS_FS_Pin' undeclared (first use in this function)
+  118 |     HAL_GPIO_DeInit(GPIOA, VBUS_FS_Pin|OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin);
+      |                            ^~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c:118:40: error: 'OTG_FS_ID_Pin' undeclared (first use in this function); did you mean 'OTG_FS_IRQn'?
+  118 |     HAL_GPIO_DeInit(GPIOA, VBUS_FS_Pin|OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin);
+      |                                        ^~~~~~~~~~~~~
+      |                                        OTG_FS_IRQn
+../USB_HOST/Target/usbh_conf.c:118:54: error: 'OTG_FS_DM_Pin' undeclared (first use in this function); did you mean 'OTG_FS_IRQn'?
+  118 |     HAL_GPIO_DeInit(GPIOA, VBUS_FS_Pin|OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin);
+      |                                                      ^~~~~~~~~~~~~
+      |                                                      OTG_FS_IRQn
+../USB_HOST/Target/usbh_conf.c:118:68: error: 'OTG_FS_DP_Pin' undeclared (first use in this function); did you mean 'OTG_FS_IRQn'?
+  118 |     HAL_GPIO_DeInit(GPIOA, VBUS_FS_Pin|OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin);
+      |                                                                    ^~~~~~~~~~~~~
+      |                                                                    OTG_FS_IRQn
+make: *** [USB_HOST/Target/subdir.mk:22: USB_HOST/Target/usbh_conf.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+11:13:44 Build Failed. 11 errors, 0 warnings. (took 1s.28ms)
+

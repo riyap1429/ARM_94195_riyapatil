@@ -1,0 +1,48 @@
+09:50:30 **** Incremental Build of configuration Debug for project A8.Q4 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:25: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  117 |                         sprintf(str, "%d", i);
+      |                         ^~~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "my_lcd.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:117:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  117 |                         sprintf(str, "%d", i);
+      |                         ^~~~~~~
+../Core/Src/main.c:117:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:179:13: error: invalid storage class for function 'MX_I2C1_Init'
+  179 | static void MX_I2C1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:213:13: error: invalid storage class for function 'MX_GPIO_Init'
+  213 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:244:1: error: expected declaration or statement at end of input
+  244 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:52:13: warning: 'MX_GPIO_Init' used but never defined
+   52 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:53:13: warning: 'MX_I2C1_Init' used but never defined
+   53 | static void MX_I2C1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:235:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  235 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:213:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  213 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:179:13: warning: 'MX_I2C1_Init' defined but not used [-Wunused-function]
+  179 | static void MX_I2C1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:132:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  132 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+09:50:31 Build Failed. 4 errors, 8 warnings. (took 1s.28ms)
+

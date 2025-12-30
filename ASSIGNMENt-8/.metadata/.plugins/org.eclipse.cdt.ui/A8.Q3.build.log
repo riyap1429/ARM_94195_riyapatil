@@ -1,0 +1,16 @@
+10:08:44 **** Build of configuration Debug for project A8.Q3 ****
+make -j12 all 
+arm-none-eabi-gcc -o "A8.Q3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\stmprojects\ASSIGNMENT 8\A8.Q3\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="A8.Q3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: A8.Q3.elf
+ 
+arm-none-eabi-size  A8.Q3.elf 
+arm-none-eabi-objdump -h -S A8.Q3.elf  > "A8.Q3.list"
+   text	   data	    bss	    dec	    hex	filename
+   9764	     12	   1660	  11436	   2cac	A8.Q3.elf
+Finished building: default.size.stdout
+ 
+Finished building: A8.Q3.list
+ 
+
+10:08:48 Build Finished. 0 errors, 0 warnings. (took 3s.539ms)
+
