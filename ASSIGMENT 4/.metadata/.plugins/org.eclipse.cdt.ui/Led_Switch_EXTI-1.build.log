@@ -1,0 +1,17 @@
+09:48:58 **** Incremental Build of configuration Debug for project Led_Switch_EXTI-1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/ext_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ext_intr.d" -MT"Src/ext_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/ext_intr.o"
+arm-none-eabi-gcc -o "Led_Switch_EXTI-1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\stmprojects\ASSIGMENT 4\Q.1\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Switch_EXTI-1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Switch_EXTI-1.elf
+ 
+arm-none-eabi-size  Led_Switch_EXTI-1.elf 
+arm-none-eabi-objdump -h -S Led_Switch_EXTI-1.elf  > "Led_Switch_EXTI-1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1104	      4	   1564	   2672	    a70	Led_Switch_EXTI-1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Switch_EXTI-1.list
+ 
+
+09:48:59 Build Finished. 0 errors, 0 warnings. (took 1s.60ms)
+
