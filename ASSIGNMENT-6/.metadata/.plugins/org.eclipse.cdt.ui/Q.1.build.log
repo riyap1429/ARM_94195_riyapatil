@@ -1,0 +1,187 @@
+10:56:24 **** Incremental Build of configuration Debug for project Q.1 ****
+make -j12 all 
+arm-none-eabi-gcc "../USB_HOST/Target/usbh_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_HOST/Target/usbh_conf.d" -MT"USB_HOST/Target/usbh_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_HOST/Target/usbh_conf.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o"
+../USB_HOST/Target/usbh_conf.c:38:1: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   38 | HCD_HandleTypeDef hhcd_USB_OTG_FS;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../USB_HOST/Target/usbh_conf.c:62:22: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   62 | void HAL_HCD_MspInit(HCD_HandleTypeDef* hcdHandle)
+      |                      ^~~~~~~~~~~~~~~~~
+      |                      DMA_HandleTypeDef
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c: In function 'USBH_ParseEPDesc':
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c:587:40: error: 'EP_TYPE_MSK' undeclared (first use in this function)
+  587 |     if ((ep_descriptor->bmAttributes & EP_TYPE_MSK) == EP_TYPE_BULK)
+      |                                        ^~~~~~~~~~~
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c:587:40: note: each undeclared identifier is reported only once for each function it appears in
+../USB_HOST/Target/usbh_conf.c:102:24: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  102 | void HAL_HCD_MspDeInit(HCD_HandleTypeDef* hcdHandle)
+      |                        ^~~~~~~~~~~~~~~~~
+      |                        DMA_HandleTypeDef
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c:587:56: error: 'EP_TYPE_BULK' undeclared (first use in this function); did you mean 'USB_EP_TYPE_BULK'?
+  587 |     if ((ep_descriptor->bmAttributes & EP_TYPE_MSK) == EP_TYPE_BULK)
+      |                                                        ^~~~~~~~~~~~
+      |                                                        USB_EP_TYPE_BULK
+../USB_HOST/Target/usbh_conf.c:134:27: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  134 | void HAL_HCD_SOF_Callback(HCD_HandleTypeDef *hhcd)
+      |                           ^~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c:594:61: error: 'EP_TYPE_CTRL' undeclared (first use in this function); did you mean 'USB_EP_TYPE_CTRL'?
+  594 |     else if ((ep_descriptor->bmAttributes & EP_TYPE_MSK) == EP_TYPE_CTRL)
+      |                                                             ^~~~~~~~~~~~
+      |                                                             USB_EP_TYPE_CTRL
+../USB_HOST/Target/usbh_conf.c:144:31: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  144 | void HAL_HCD_Connect_Callback(HCD_HandleTypeDef *hhcd)
+      |                               ^~~~~~~~~~~~~~~~~
+      |                               DMA_HandleTypeDef
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c:602:62: error: 'EP_TYPE_ISOC' undeclared (first use in this function); did you mean 'USB_EP_TYPE_ISOC'?
+  602 |     else if (((ep_descriptor->bmAttributes & EP_TYPE_MSK) == EP_TYPE_ISOC) ||
+      |                                                              ^~~~~~~~~~~~
+      |                                                              USB_EP_TYPE_ISOC
+../USB_HOST/Target/usbh_conf.c:154:34: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  154 | void HAL_HCD_Disconnect_Callback(HCD_HandleTypeDef *hhcd)
+      |                                  ^~~~~~~~~~~~~~~~~
+      |                                  DMA_HandleTypeDef
+../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c:603:57: error: 'EP_TYPE_INTR' undeclared (first use in this function); did you mean 'USB_EP_TYPE_INTR'?
+  603 |         ((ep_descriptor->bmAttributes & EP_TYPE_MSK) == EP_TYPE_INTR))
+      |                                                         ^~~~~~~~~~~~
+      |                                                         USB_EP_TYPE_INTR
+../USB_HOST/Target/usbh_conf.c:166:42: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  166 | void HAL_HCD_HC_NotifyURBChange_Callback(HCD_HandleTypeDef *hhcd, uint8_t chnum, HCD_URBStateTypeDef urb_state)
+      |                                          ^~~~~~~~~~~~~~~~~
+      |                                          DMA_HandleTypeDef
+../USB_HOST/Target/usbh_conf.c:166:82: error: unknown type name 'HCD_URBStateTypeDef'; did you mean 'USBH_URBStateTypeDef'?
+  166 | void HAL_HCD_HC_NotifyURBChange_Callback(HCD_HandleTypeDef *hhcd, uint8_t chnum, HCD_URBStateTypeDef urb_state)
+      |                                                                                  ^~~~~~~~~~~~~~~~~~~
+      |                                                                                  USBH_URBStateTypeDef
+../USB_HOST/Target/usbh_conf.c:178:35: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  178 | void HAL_HCD_PortEnabled_Callback(HCD_HandleTypeDef *hhcd)
+      |                                   ^~~~~~~~~~~~~~~~~
+      |                                   DMA_HandleTypeDef
+../USB_HOST/Target/usbh_conf.c:188:36: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  188 | void HAL_HCD_PortDisabled_Callback(HCD_HandleTypeDef *hhcd)
+      |                                    ^~~~~~~~~~~~~~~~~
+      |                                    DMA_HandleTypeDef
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_Init':
+../USB_HOST/Target/usbh_conf.c:207:18: error: request for member 'pData' in something not a structure or union
+  207 |   hhcd_USB_OTG_FS.pData = phost;
+      |                  ^
+../USB_HOST/Target/usbh_conf.c:210:18: error: request for member 'Instance' in something not a structure or union
+  210 |   hhcd_USB_OTG_FS.Instance = USB_OTG_FS;
+      |                  ^
+../USB_HOST/Target/usbh_conf.c:211:18: error: request for member 'Init' in something not a structure or union
+  211 |   hhcd_USB_OTG_FS.Init.Host_channels = 8;
+      |                  ^
+../USB_HOST/Target/usbh_conf.c:212:18: error: request for member 'Init' in something not a structure or union
+  212 |   hhcd_USB_OTG_FS.Init.speed = HCD_SPEED_FULL;
+      |                  ^
+../USB_HOST/Target/usbh_conf.c:212:32: error: 'HCD_SPEED_FULL' undeclared (first use in this function); did you mean 'USBH_SPEED_FULL'?
+  212 |   hhcd_USB_OTG_FS.Init.speed = HCD_SPEED_FULL;
+      |                                ^~~~~~~~~~~~~~
+      |                                USBH_SPEED_FULL
+../USB_HOST/Target/usbh_conf.c:212:32: note: each undeclared identifier is reported only once for each function it appears in
+../USB_HOST/Target/usbh_conf.c:213:18: error: request for member 'Init' in something not a structure or union
+  213 |   hhcd_USB_OTG_FS.Init.dma_enable = DISABLE;
+      |                  ^
+../USB_HOST/Target/usbh_conf.c:214:18: error: request for member 'Init' in something not a structure or union
+  214 |   hhcd_USB_OTG_FS.Init.phy_itface = HCD_PHY_EMBEDDED;
+      |                  ^
+make: *** [Middlewares/ST/STM32_USB_Host_Library/Core/Src/subdir.mk:28: Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o] Error 1
+make: *** Waiting for unfinished jobs....
+../USB_HOST/Target/usbh_conf.c:214:37: error: 'HCD_PHY_EMBEDDED' undeclared (first use in this function)
+  214 |   hhcd_USB_OTG_FS.Init.phy_itface = HCD_PHY_EMBEDDED;
+      |                                     ^~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c:215:18: error: request for member 'Init' in something not a structure or union
+  215 |   hhcd_USB_OTG_FS.Init.Sof_enable = DISABLE;
+      |                  ^
+../USB_HOST/Target/usbh_conf.c:216:7: warning: implicit declaration of function 'HAL_HCD_Init'; did you mean 'HAL_DeInit'? [-Wimplicit-function-declaration]
+  216 |   if (HAL_HCD_Init(&hhcd_USB_OTG_FS) != HAL_OK)
+      |       ^~~~~~~~~~~~
+      |       HAL_DeInit
+../USB_HOST/Target/usbh_conf.c:221:27: warning: implicit declaration of function 'HAL_HCD_GetCurrentFrame' [-Wimplicit-function-declaration]
+  221 |   USBH_LL_SetTimer(phost, HAL_HCD_GetCurrentFrame(&hhcd_USB_OTG_FS));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_DeInit':
+../USB_HOST/Target/usbh_conf.c:236:16: warning: implicit declaration of function 'HAL_HCD_DeInit'; did you mean 'HAL_RCC_DeInit'? [-Wimplicit-function-declaration]
+  236 |   hal_status = HAL_HCD_DeInit(phost->pData);
+      |                ^~~~~~~~~~~~~~
+      |                HAL_RCC_DeInit
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_Start':
+../USB_HOST/Target/usbh_conf.c:253:16: warning: implicit declaration of function 'HAL_HCD_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+  253 |   hal_status = HAL_HCD_Start(phost->pData);
+      |                ^~~~~~~~~~~~~
+      |                HAL_DMA_Start
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_Stop':
+../USB_HOST/Target/usbh_conf.c:270:16: warning: implicit declaration of function 'HAL_HCD_Stop' [-Wimplicit-function-declaration]
+  270 |   hal_status = HAL_HCD_Stop(phost->pData);
+      |                ^~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_GetSpeed':
+../USB_HOST/Target/usbh_conf.c:286:11: warning: implicit declaration of function 'HAL_HCD_GetCurrentSpeed' [-Wimplicit-function-declaration]
+  286 |   switch (HAL_HCD_GetCurrentSpeed(phost->pData))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_ResetPort':
+../USB_HOST/Target/usbh_conf.c:317:16: warning: implicit declaration of function 'HAL_HCD_ResetPort' [-Wimplicit-function-declaration]
+  317 |   hal_status = HAL_HCD_ResetPort(phost->pData);
+      |                ^~~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_GetLastXferSize':
+../USB_HOST/Target/usbh_conf.c:332:10: warning: implicit declaration of function 'HAL_HCD_HC_GetXferCount' [-Wimplicit-function-declaration]
+  332 |   return HAL_HCD_HC_GetXferCount(phost->pData, pipe);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_OpenPipe':
+../USB_HOST/Target/usbh_conf.c:357:16: warning: implicit declaration of function 'HAL_HCD_HC_Init'; did you mean 'HAL_DMA_Init'? [-Wimplicit-function-declaration]
+  357 |   hal_status = HAL_HCD_HC_Init(phost->pData, pipe, epnum,
+      |                ^~~~~~~~~~~~~~~
+      |                HAL_DMA_Init
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_SubmitURB':
+../USB_HOST/Target/usbh_conf.c:430:16: warning: implicit declaration of function 'HAL_HCD_HC_SubmitRequest' [-Wimplicit-function-declaration]
+  430 |   hal_status = HAL_HCD_HC_SubmitRequest(phost->pData, pipe, direction ,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_GetURBState':
+../USB_HOST/Target/usbh_conf.c:454:32: warning: implicit declaration of function 'HAL_HCD_HC_GetURBState'; did you mean 'USBH_LL_GetURBState'? [-Wimplicit-function-declaration]
+  454 |   return (USBH_URBStateTypeDef)HAL_HCD_HC_GetURBState (phost->pData, pipe);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+      |                                USBH_LL_GetURBState
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_SetToggle':
+../USB_HOST/Target/usbh_conf.c:489:3: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  489 |   HCD_HandleTypeDef *pHandle;
+      |   ^~~~~~~~~~~~~~~~~
+      |   DMA_HandleTypeDef
+../USB_HOST/Target/usbh_conf.c:492:13: error: request for member 'hc' in something not a structure or union
+  492 |   if(pHandle->hc[pipe].ep_is_in)
+      |             ^~
+../USB_HOST/Target/usbh_conf.c:494:12: error: request for member 'hc' in something not a structure or union
+  494 |     pHandle->hc[pipe].toggle_in = toggle;
+      |            ^~
+../USB_HOST/Target/usbh_conf.c:498:12: error: request for member 'hc' in something not a structure or union
+  498 |     pHandle->hc[pipe].toggle_out = toggle;
+      |            ^~
+../USB_HOST/Target/usbh_conf.c: In function 'USBH_LL_GetToggle':
+../USB_HOST/Target/usbh_conf.c:513:3: error: unknown type name 'HCD_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  513 |   HCD_HandleTypeDef *pHandle;
+      |   ^~~~~~~~~~~~~~~~~
+      |   DMA_HandleTypeDef
+../USB_HOST/Target/usbh_conf.c:516:13: error: request for member 'hc' in something not a structure or union
+  516 |   if(pHandle->hc[pipe].ep_is_in)
+      |             ^~
+../USB_HOST/Target/usbh_conf.c:518:21: error: request for member 'hc' in something not a structure or union
+  518 |     toggle = pHandle->hc[pipe].toggle_in;
+      |                     ^~
+../USB_HOST/Target/usbh_conf.c:522:21: error: request for member 'hc' in something not a structure or union
+  522 |     toggle = pHandle->hc[pipe].toggle_out;
+      |                     ^~
+make: *** [USB_HOST/Target/subdir.mk:22: USB_HOST/Target/usbh_conf.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+10:56:25 Build Failed. 35 errors, 11 warnings. (took 1s.406ms)
+
